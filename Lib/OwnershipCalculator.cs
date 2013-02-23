@@ -11,7 +11,7 @@ namespace Lib
         public readonly Dictionary<string, List<int>> OwnershipDistribution = new Dictionary<string, List<int>>();
 
         public readonly FilePaths codeDistribution = new FilePaths();
-        private readonly AuthorIndex _authorIndex = new AuthorIndex();
+        public readonly AuthorIndex _authorIndex = new AuthorIndex();
 
         public void Calculate(Dictionary<String, FilePaths> authors, FilePaths totalCommits)
         {
